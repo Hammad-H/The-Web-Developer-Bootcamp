@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="firstName">First Name:</label>
+			<input type="text" placeholder="First Name" name="FirstName" id="firstName" required>
+			<label for="lastName">Last Name:</label>
+			<input type="text" placeholder="Last Name" name="LastName" id="lastName" required>
+		</div>
+		
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="male" value="male">
+			<label for="female">Female</label>
+			<input type="radio" name="gender" id="female" value="female">
+			<label for="other">Other</label>
+			<input type="radio" name="gender" id="other" value="other">
+		</div>
+
+	
+		
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="Email" placeholder="email address" id="email" required>
+			<label for="password">Password</label>
+			<input type="password" name="password" placeholder="passwrd" id="passwrd" required pattern=".{5,10}" title="5 to 10 characters">
+		</div>
+
+		
+
+		<div>
+			<label for "birthday">Birthday:</label>
+			<select name="Month">
+				<option>Month</option>
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+			</select>
+
+			<select name="Day">
+				<option>Day</option>
+				<option>01</option>
+				<option>02</option>
+				<option>03</option>
+				<option>04</option>
+				<option>05</option>
+			</select>
+
+			<select name="Year">
+				<option>Year</option>
+				<option>2018</option>
+				<option>2017</option>
+				<option>2016</option>
+				<option>2015</option>
+				<option>2014</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="checkbox">I agree to the terms and conditions</label>
+     	 	<input type="checkbox" name="checkbox" id="checkbox"  required />
+		</div>
+		
+      	<div>
+      		<button type="submit" value="submit">Submit</button>
+      		<button type="reset" value="reset">Reset</button>
+      	</div>
+		
+	</form>
+</body>
+</html>
